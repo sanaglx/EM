@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'PFHAUSSQUAREPROOUTLINE';
+    src: url('fonts/PFHAUSSQUAREPROOUTLINE.eot');
+    src: url('fonts/PFHAUSSQUAREPROOUTLINE.eot') format('embedded-opentype'),
+         url('fonts/PFHAUSSQUAREPROOUTLINE.woff2') format('woff2'),
+         url('fonts/PFHAUSSQUAREPROOUTLINE.woff') format('woff'),
+         url('fonts/PFHAUSSQUAREPROOUTLINE.ttf') format('truetype'),
+         url('fonts/PFHAUSSQUAREPROOUTLINE.svg#PFHAUSSQUAREPROOUTLINE') format('svg');
+}

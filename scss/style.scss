@@ -1,0 +1,432 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 30.05.2016, 18:00:31
+    Author     : Александр
+*/
+
+@font-face {
+    font-family: 'pfr';
+    src: url('../fonts/PFHAUSSQUAREPROREGULAR.eot');
+    src: url('../fonts/PFHAUSSQUAREPROREGULAR.eot') format('embedded-opentype'),
+        url('../fonts/PFHAUSSQUAREPROREGULAR.woff2') format('woff2'),
+        url('../fonts/PFHAUSSQUAREPROREGULAR.woff') format('woff'),
+        url('../fonts/PFHAUSSQUAREPROREGULAR.ttf') format('truetype'),
+        url('../fonts/PFHAUSSQUAREPROREGULAR.svg#PFHAUSSQUAREPROREGULAR') format('svg');
+
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'pfp';
+    src: url('../fonts/PFHAUSSQUAREPROOUTLINE.eot');
+    src: url('../fonts/PFHAUSSQUAREPROOUTLINE.eot') format('embedded-opentype'),
+        url('../fonts/PFHAUSSQUAREPROOUTLINE.woff2') format('woff2'),
+        url('../fonts/PFHAUSSQUAREPROOUTLINE.woff') format('woff'),
+        url('../fonts/PFHAUSSQUAREPROOUTLINE.ttf') format('truetype'),
+        url('../fonts/PFHAUSSQUAREPROOUTLINE.svg#PFHAUSSQUAREPROOUTLINE') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'pfo';
+    src: url('../fonts/PFHAUSSQUAREPROBOLDOUTLINE.eot');
+    src: url('../fonts/PFHAUSSQUAREPROBOLDOUTLINE.eot') format('embedded-opentype'),
+        url('../fonts/PFHAUSSQUAREPROBOLDOUTLINE.woff2') format('woff2'),
+        url('../fonts/PFHAUSSQUAREPROBOLDOUTLINE.woff') format('woff'),
+        url('../fonts/PFHAUSSQUAREPROBOLDOUTLINE.ttf') format('truetype'),
+        url('../fonts/PFHAUSSQUAREPROBOLDOUTLINE.svg#PFHAUSSQUAREPROBOLDOUTLINE') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'pfb';
+    src: url('../fonts/PFHAUSSQUAREPROBOLD.eot');
+    src: url('../fonts/PFHAUSSQUAREPROBOLD.eot') format('embedded-opentype'),
+        url('../fonts/PFHAUSSQUAREPROBOLD.woff2') format('woff2'),
+        url('../fonts/PFHAUSSQUAREPROBOLD.woff') format('woff'),
+        url('../fonts/PFHAUSSQUAREPROBOLD.ttf') format('truetype'),
+        url('../fonts/PFHAUSSQUAREPROBOLD.svg#PFHAUSSQUAREPROBOLD') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+body{
+    font-family: "Roboto","Helvetica Neue","Helvetica","Arial","sans-serif";
+    min-width: 1024px;
+}
+
+h1, h2, h3{
+    font-family: "pfr","Helvetica Neue","Helvetica","Arial","sans-serif";  
+    text-transform: uppercase;
+}
+h2{
+    padding: 30px;
+    font-size: 2em;
+    letter-spacing: 2px;
+    i{
+        font-family: "pfp","Helvetica Neue","Helvetica","Arial","sans-serif";
+        font-style: normal;
+        font-size: 1.1em;
+    }
+}
+
+.container{
+    width: 960px;
+    margin:0 auto;
+}
+.btnx{
+    background: #ff0066;
+    border-color: #ff0066;
+    color:#fff;
+}
+
+/*******carousel***************************/
+
+/*
+These are the item elements. jCarousel works best, if the items
+have a fixed width and height (but it's not required).
+*/
+.jcarousel{position: relative;overflow: hidden;}
+.staff{    text-align: center;}
+.jcarousel li {
+    /* Required only for block elements like <li>'s */
+    float: left;
+    /*width: 250px;
+    margin-left: 15px;
+     margin-right: 15px;
+    background: #ccc;
+    */
+}
+.staff img{
+    margin: 0 auto 15px;
+}
+
+.jcarousel-control-next, .jcarousel-control-prev{
+    font-size: 3em; 
+    position: absolute; 
+    z-index: 100;top: 36%; 
+    background: #fff;
+    box-shadow: none;
+    color: #00F; 
+    height: 34px;
+     width: 27px;
+}
+.jcarousel-control-prev{ left: 0; }
+.jcarousel-control-next{ right:  0;}
+.jcarousel a{text-decoration: none;border:none;outline: none;}
+
+
+/****************************************************************************/
+.head{
+    background: url(img/fon1.jpg) no-repeat;
+    background-size: cover;
+    background-position: top;
+    text-align: center;
+    position: relative;
+
+
+
+    .f-menu{
+        background: url(img/fon-m.png)repeat-x;  
+    }
+    #times{text-align: justify;}
+    #times ul{display:inline; margin:0; padding:0;white-space: nowrap; }
+    #times ul li{
+        display: inline;
+        .active {
+            text-decoration: underline;
+            font-weight: 600;
+        }
+
+        a{display:inline-block;
+          font-size: 1em;
+          color: #fff;
+          text-decoration: none;
+          padding: 13px 29px 13px;
+        }
+        a:hover{
+            text-decoration: underline;
+
+        }
+    }
+    #times span{color: #fff;}
+
+    .otstup{
+        margin: 40px 0;
+        position: relative;
+    }
+    .col-6{
+        width:50%;
+        float:left;
+    }
+    .blok1{
+        text-align: left;
+        width: 60%;
+        margin-left: 161px;
+        span{
+            color:#333;
+            font-weight: bold;
+            padding-left: 5px;
+        }
+    }   
+    .logo{float:left;width:100px;margin-left: 40px }
+    .zav{    font-size: 1.3em;padding-left: 10px;}
+    .elm{    font-size: 1.5em; font-weight: bold;padding-left: 10px; }
+    .sdp{    font-size: 0.9em;padding-left: 10px;}
+    .nomer{color:red;font-size: 1.1em; line-height: 1.3;}
+    .btn-r{text-decoration: none; position: absolute;background: #ff0066; border-radius: 10px; width: 89px; padding: 5px 0px 5px 15px;
+           color: #fff; text-align: left;top: 0; right: 0px;}
+    .blok2{
+        position:relative;
+        ul{position: absolute;     bottom: 48px;    right: 27px;}
+        li{
+            list-style-type: none;
+            text-align: left;
+            line-height: 1;
+            color: #fff;
+            font-size: 1em;
+            letter-spacing: 0.4px;
+            line-height: 1.5;
+        }
+    } 
+
+    .pad-bottom{
+        padding-bottom: 70px;
+        position: relative;
+        .grn{position: absolute;top:4px;left:-69px;}
+        .drbl{position: absolute;top:10px;right:-33px;}
+    }
+    .f-obr{
+        padding:30px;
+        background:rgba(204, 204, 204, 0.27);;
+        margin-bottom:40px;
+        display:block;
+        position: relative;
+        .h3{
+            font-size: 1.7em;
+            color: #Fff;
+            font-weight: bold;
+            padding-bottom: 10px;
+            span{
+                font-weight: 200;
+                padding: 0 5px;
+            }
+        }
+        .f-elm{padding: 15px 20px;width: 246px; margin: 0 10px;}
+        .btnx{} 
+    }
+}
+.rekl,.tovar{
+    text-align:center;
+    .col-3{
+        width: 31%;
+        float: left;
+        padding: 28px 11px;
+        .blok-img{
+            height: 170px;
+            img{padding-bottom: 20px;}
+        }
+
+        .blok1{
+            border: 1px dashed #f00;
+            border-radius: 10px;
+            width: 254px;
+            margin-left: 22px;
+            margin-bottom: 50px;
+            .text-p{
+                font-family: "pfb","Helvetica Neue","Helvetica","Arial","sans-serif";
+                font-size: 2.5em;
+                color:red;
+                line-height: 1;
+                text-align: left;
+                padding: 30px;
+
+            } 
+        }
+
+    } 
+    .text-b{font-weight: bold;padding-bottom: 25px;}
+    .text-r{text-align: left;padding: 0px 0px 0 24px;}
+    ul{text-align: left;
+       li{
+           list-style: none;
+           background: url("img/tchk.png") no-repeat left center;
+           line-height: 1.4;
+           padding: 0 14px;
+       }
+    }
+}
+
+.tovar{
+    .col-6 {width: 50%;    float: left; position: relative;    margin-bottom: 80px;}
+    .bkg-w, .bkg-wr{
+        text-align: left;
+        background: #fff;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        padding: 15px;
+        margin-right:15px;
+        position: relative;
+        z-index: 10;
+        height: 358px;
+    }
+    .bkg-wr{
+        margin-left: 15px;
+        margin-right: 0;
+    }
+    .blok1{
+        display: block;
+        width: 210px;
+        float: left;
+    }
+    .blok-img{float:left;display: block;    margin-right: 14px;}
+    img{
+        padding: 50px 0;
+        width: 208px;
+        height: 238px;
+    }
+    h3{font-size: 1.7em; }
+    .text-b{padding: 0}
+    ul{ padding:0;   margin: 5px 0 15px 0;}
+    li{}
+    .st-cena{font-size: 1.4em;text-decoration: line-through; }
+    .new-cena{ 
+        font-size: 2em;
+        color: #ff0065;
+        font-weight: bold;
+    }
+    .btn-o, .btn-r{ 
+        padding: 30px 20px 15px;
+        display: block;
+        border-radius: 10px;
+        display: inline-block;
+        width: 192px;
+        margin: 0 -3px 0 0px;
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.3em;
+    }
+    .btn-o{background:#fe5a00; }
+    .btn-r{background: #ff0065;}
+    .blok-t{
+        position: absolute;
+        bottom: -50px;
+        z-index: 0;
+    }
+    .blok-tr{
+        position: absolute;
+        bottom: -50px;
+        z-index: 0; 
+    }
+
+    .blok-tr{margin-left: 15px;}
+    .btn-r{
+    }
+}
+.zakaz{
+    background:url(img/fon2.jpg) no-repeat;
+    background-size: cover;
+    background-position: top;
+    text-align: center;
+    position: relative;
+
+    h2{color:#FFF;padding: 70px 0;}
+    i{}
+    .img-gr{
+        background: url(img/grupa4.png) no-repeat;
+
+    }
+    .col-3{
+        padding-top:250px;
+        width: 23%; 
+        color:#fff;
+        display: inline-block; 
+    }
+    .text{padding:10px 20px;    line-height: 1.4;}
+    .telf{
+        line-height: 1.4;
+        position:relative;
+        .btn-r{
+            text-decoration: none;
+            position: relative;
+            background: #ff0066;
+            border-radius: 10px;
+            width: 89px;
+            padding: 5px 0px 5px 15px;
+            color: #fff;
+            text-align: left;
+            top: 0;
+            right: 0px;
+            display: block;
+            margin: 20px 60px;
+        }
+
+    }
+
+}   
+
+.rekl-1{
+    text-align:center;
+    .col-3{
+        width: 31%;
+        float: left;
+        padding: 10px 11px;
+        .blok-img{
+            height: 170px;
+            img{padding-bottom: 20px;}
+        }
+
+        .blok1{
+            border: 1px dashed #f00;
+            border-radius: 10px;
+            width: 254px;
+            margin-left: 22px;
+            margin-bottom: 50px;
+            .text-p{
+                font-family: "pfb","Helvetica Neue","Helvetica","Arial","sans-serif";
+                font-size: 1.5em;
+                color:red;
+                line-height: 1;
+                text-align: left;
+                padding: 30px;
+
+            } 
+        }
+
+    } 
+    .text-b{    font-weight: bold;    padding: 40px 71px 20px;}
+    .text-r{    padding: 0px 56px 30px;}
+    .f-obr{
+        padding:30px;
+        background:rgb(169, 169, 169);
+        margin-bottom:40px;
+        display:block;
+        position: relative;
+        .h3{
+            font-size: 1.6em;
+            color: #Fff;
+            font-weight: bold;
+            padding-bottom: 10px;
+            
+            span{
+                font-weight: 200;
+                padding: 0 5px;
+                letter-spacing:-0.9px;
+            }
+        }
+        .f-elm{padding: 15px 20px;width: 246px; margin: 0 10px;}
+        .btnx{} 
+    }
+}

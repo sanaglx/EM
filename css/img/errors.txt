@@ -1,0 +1,1 @@
+[Mon May 30 2016 16:17:28 GMT+0300 (RTZ 2 (зима))] layer "drob5.pnj": Unsupported extension: pnj
